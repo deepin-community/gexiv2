@@ -1,0 +1,7 @@
+Tests: smoketest
+Depends: libgexiv2-dev,
+         build-essential
+
+Tests: gir.smoketest
+Depends: gir1.2-gexiv2-0.10,
+         python3-gi

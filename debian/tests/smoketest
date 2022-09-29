@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+cd "$AUTOPKGTEST_TMP"
+cat > test.c << EOF
+#include <gexiv2/gexiv2.h>
+
+int main(void)
+{
+        gexiv2_initialize();
+        return 0;
+}
+
+EOF
+gcc -Wall -o test test.c $(pkg-config --cflags gexiv2) \
+        $(pkg-config --libs gexiv2)
+./test
+objdump -p test | grep "gexiv"
