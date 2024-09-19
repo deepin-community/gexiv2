@@ -1,3 +1,9 @@
+gexiv2 (0.14.0-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:48:18 +0800
+
 gexiv2 (0.14.0-1) unstable; urgency=medium
 
   [ Jason Crain ]
